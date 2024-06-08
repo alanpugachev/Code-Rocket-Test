@@ -35,14 +35,15 @@ class User {
     var phoneNumber: String = ""
         set(value) {
             if (!isCorrectPhoneNumber(value)) {
-                println("invalid phone number")
+                //println("invalid phone number")
                 // TODO default value
             } else {
                 field = value
             }
         }
 
-    // no need to parse for errors
+    // no need to parse for invalid values
+    // only for exceptions
     var salary: Int = 0
 
     fun isCorrectPhoneNumber(phoneNumber: String): Boolean {

@@ -8,6 +8,7 @@ class Converter {
 
         for(it in array) {
             var userString = it.split(";")
+
             var user = User()
             user.name = userString[0]
             user.gender = userString[1]
@@ -22,7 +23,7 @@ class Converter {
             users.add(user)
         }
 
-        users.forEach { println(it.name) }
+        //users.forEach { println("${it.name}; ${it.gender}; ${it.birthday}; ${it.phoneNumber}; ${it.salary}") }
         return users
     }
 }
